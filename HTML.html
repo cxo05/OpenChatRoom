@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/jpeg" href="/Cover.jpg"> 
+<title>OpenChatRoom</title>
+<link rel="stylesheet" type="text/css" href="animate.css">
+<link rel="stylesheet" type="text/css" href="Css.css">
+<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="Script.js"></script>
+</head>
+<body class="animated fadeIn">
+<h1 id="header">Open Chat Room</h1>
+<div id="main">
+	<div id="leftBox">
+		<ul id="Users">
+			<li>Users:</li>
+			<li id="peoplecount">0</li>
+			<li><img src="/arrow" style="width:64px;height:64px;vertical-align:middle" id="arrow"></li>
+			<!-- <li id="typing"></li> -->
+		</ul>
+		<ol id="people"></ol>
+	</div>
+	<div id="rightBox" class="container"></div>
+</div>	
+<div id="login">
+    <form>
+        <input type="text" class="input-small" placeholder="Username" id="name" autocomplete="off" maxlength="15">
+        <div id="buttonEnter">
+			<input type="button" class="myButton" name="join" id="join" value="Join">
+		</div>
+		<div id="status"></div>
+    </form>
+</div>
+<br>
+<div id="chat">
+    <form id="2">
+        <input type="text" class="input" placeholder="Your message" id="msg" maxlength="200">
+        <input type="button" name="send" id="send" value="Send">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Nevis";
+    src: url("/nevis.ttf");
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("/Roboto-Light.ttf");
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}
+@-webkit-keyframes rotate-90 {
+    from{
+        -webkit-transform:rotate(0deg);
+    }       
+    to{
+        -webkit-transform:rotate(90deg);
+    }                       
+}
+@-webkit-keyframes rotate90 {
+    from{
+        -webkit-transform:rotate(90deg);
+    }       
+    to{
+        -webkit-transform:rotate(0deg);
+    }                       
+}
+.Rotate-90{
+	-webkit-animation-name: rotate-90;
+	animation-name: rotate-90;
+	-webkit-animation-duration: 0.5s;
+	animation-fill-mode: forwards;  
+}
+.Rotate90{
+	-webkit-animation-name: rotate90;
+	animation-name: rotate90;
+	-webkit-animation-duration: 0.5s;
+	animation-fill-mode: forwards;  
+}
+html, body {
+	background-color: #d9dbd6;
+	margin: 0;
+    height: 100%;
+	-webkit-animation-duration: 1s;
+}
+
+body {
+    position: relative;
+    padding: 80px 0 80px 0;
+}
+#header {
+	background-color: #4EDDA5;
+	font-family: "Nevis", sans-serif; /*minion*/
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	line-height: 80px;
+	
+    width: 100%;
+    margin: 0;
+    top: 0;
+	height: 80px;
+    position: absolute;
+}
+#main{
+    height: 100%;
+    margin: auto;
+    margin-bottom: 0; 
+	width: 1150px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.06),0 2px 5px 0 rgba(0,0,0,.2) 
+}
+#leftBox{
+	width: 250px;
+    height: 100%;
+	border-right: 4px solid #419873;
+	border-left: 4px solid #419873;
+    background: white;
+    float: left;
+}
+#rightBox{
+    background: white;
+    height: 100%;
+    margin-left: 250px;
+	border-right: 4px solid #419873;
+}
+.container { 
+	background-color: white;
+	overflow:auto;
+}
+.container p { 
+	font-family: Roboto-Light;
+	margin:0;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+.container p:nth-child(odd) { 
+	background: #eee; 
+}
+#Gone {
+	color:red;
+}
+#msg {
+	font-family: Roboto-Light;
+	font-size: 150%;
+	border:10px solid #419873;
+	bottom: 0;
+	height: 60px;
+	left: 0;
+	outline: none;
+	padding-left: 10px;
+	position: fixed;
+	right: 0;
+	width: 95%;
+}
+#send{
+	font-family: Roboto-Light;
+	font-size: 120%;
+	background-color:#80E1B7;
+	outline: none;
+	bottom:0;
+	height:82px;
+	right:0;
+	width:82px;
+	position:fixed;
+	border: 10px solid #419873;
+}
+#people{
+	margin-top:0;
+	font-size:105%;
+}
+#names{
+	border-bottom: 2px solid #80E1B7;
+	padding-left:10px;
+}
+#Users{
+	font-family: Roboto-Light;
+	font-size: 120%;
+	letter-spacing: 3px;
+	margin:0;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+ul#Users li{
+	display:inline;
+}
+#people li:last-child {
+	border-bottom: none;
+}
+#login{
+	width:50%;
+	margin: auto;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#login form{
+	border-radius:25px;
+	border:3px solid black;
+	background-color: #7DC4A8;
+	height:100%;
+	text-align:center;
+	top:0;
+	margin:0 auto;
+	width:100%;
+	vertical-align:middle;
+    position:absolute;
+}
+.input-small::-webkit-input-placeholder { 
+    color: white;
+}
+.input-small{
+	background-color: transparent;
+    border: none;
+	outline: none;
+	padding-top: 25px;
+	padding-left: 20%;
+    text-align: center;
+    width: 60%;
+	color: white;
+	font-family: Tahoma, Geneva,sans-serif;
+	font-size: 200%;
+    letter-spacing: 3px;
+	float:left;
+}
+#buttonEnter{
+	padding-top: 25px;
+	padding-right: 25px;
+}
+.myButton {
+	background-color:#41b05f;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Tahoma, Geneva,sans-serif;
+	font-size:17px;
+	padding:12px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	outline: none;
+	letter-spacing: 2px;
+	float: right;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	left:1px;
+}
+#arrow{
+	-webkit-transform: rotate(90deg);
+}
+
+
+
+
